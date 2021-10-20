@@ -1,0 +1,29 @@
+.def-section{
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-bg{
+    background-image: url(../img/main-bg.svg);
+    background-size: cover;
+    background-position: center;
+
+    color:var(--white-color);
+}
+
+.white-bg{
+    background: var(--white-color);
+    color: var(--blue-bg)
+}
+
+.container{
+    max-width:120rem;
+    margin: 0 auto;
+}
+
+.def-section .container{
+    padding: 0 2rem;
+}

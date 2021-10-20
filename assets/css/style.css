@@ -1,127 +1,17 @@
-:root{
-    --dark-blue-color:#0A1128;
-    --white-color:#fff;
-    --light-gray-color:#eee;
-    --red-color:#fc003f;
+section#intro div.container{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 
-html{
-    font-size: 62.5%;
-}
-
-body{
-    font-family: "Open Sans", sans-serif;
-    color: var(--dark-blue-color);
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: "Montserrat", sans-serif;
-}
-
-h1{
-    font-size: 2rem;
-}
-
-a{
-    text-decoration:none;
-    width:100%;
-    height:100%;
-    display: inline-block;
-    color: inherit;
-
+div.intro-text, div.intro-img{
     display: flex;
-    align-items:center;
+    flex-flow:column wrap;
+    justify-content: center;
 }
 
-aside.menu{
-    height: 50px;
-    border-bottom: 1px solid var(--light-gray-color);
+section#top3 div.container{
+    max-width: 64rem;
+    text-align:center;
 }
 
-aside.menu div.container{
-    height:100%;
-    padding: 0 20px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-}
-
-aside.menu div.container div.logo{
-    font-size: 2.3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    height: inherit;
-}
-
-aside.menu div.container nav{
-    height: inherit;
-}
-
-aside.menu div.container nav ul{
-    list-style-type: none;
-    font-size: 1.5rem;
-    height: inherit;
-
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
-aside.menu div.container nav ul li{
-    margin: 0 2rem;
-    height: inherit;
-}
-
-aside.menu div.container nav a{
-    position:relative;
-}
-
-aside.menu div.container nav a::after{
-    content: "";
-    width: 0;
-    height: 0.2rem;
-    background-color: var(--red-color);
-    position: absolute;
-    bottom: 10px;
-    left:100%;
-    transition: all 300ms ease-in-out;
-}
-
-aside.menu div.container nav a:hover::after{
-    width:100%;
-    left: 0%;
-}
-
-
-
-
-
-
-.def-section{
-    min-height: 100vh;
-}
-
-.blue-bg{
-    background-image: url(../img/main-bg.svg);
-    background-size: cover;
-    background-position: center;
-
-    color:var(--white-color);
-}
-
-.white-bg{
-    background: var(--white-color);
-}
-
-.container{
-    max-width:1200px;
-    margin: 0 auto;
-    padding:10px 20px;
-}
