@@ -16,6 +16,11 @@ h1{
     font-size: 2rem;
 }
 
+h3{
+    font-size: 2.4rem;
+    text-transform:capitalize;
+}
+
 a{
     text-decoration:none;
     width:100%;
@@ -30,6 +35,10 @@ a{
 .def-section h2{
     text-transform:uppercase;
     font-size:4.5rem;
+    margin-bottom:4.5rem;
+}
+
+.def-section h2~p{
     margin-bottom:5rem;
 }
 
@@ -38,4 +47,26 @@ a{
     font-size: 1.8rem;
     font-weight:400;
     margin-bottom:2rem;
+}
+
+.def-section div.container div.grid h3{
+    display: flex;
+    align-items:center;
+}
+
+.def-section div.container div.grid h3::before{
+    counter-increment: counter;
+    content:counter(counter);
+    margin-right:1.4rem;
+    font-size: 6.5rem;
+    transform:rotateZ(15deg)
+}
+
+@media screen and (max-width:800px){
+    .def-section h2{
+        font-size:3rem;
+    }
+    .def-section p{
+        font-size: 1.5rem;
+    }
 }
